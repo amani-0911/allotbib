@@ -26,6 +26,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { getUsers, readNotification } from '../../actions/authActions';
 import leftArrow from'../../assets/images/left-arrow.png'
+
   
 class AppNavbar extends Component {
     state = {
@@ -255,7 +256,7 @@ componentDidMount(){
 
         return (
         <div className="appnav">
-            <Navbar color="dark" dark expand="sm" className="mb-5" >
+            <Navbar color="dark" dark  expand="md" className="mb-5" >
                 <Container>
                 {this.props.backBtn && (
             <img className="left-icon" src={leftArrow} alt="Left icon" width="30" height="30" onClick={this.props.backBtn} />
@@ -269,7 +270,7 @@ componentDidMount(){
         <h2 color='red' className="title mb-0">{this.props.title}</h2>
       </div> */}
     </div>
-                    <NavbarBrand href="/" className='brand'>Exo Clinic</NavbarBrand>
+                    <NavbarBrand href="/" className='brand'>Allo Tbib</NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>

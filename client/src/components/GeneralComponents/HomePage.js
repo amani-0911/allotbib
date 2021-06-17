@@ -10,6 +10,11 @@ import { getDoctors } from '../../actions/patientActions';
 import { getAllAppointments } from '../../actions/appointmentActions';
 import { TheLayout } from '../AdminComponents/containers';
 
+import Services from '../GeneralComponents/services/Services';
+import Footer from '../GeneralComponents/Footer/Footer';
+import {Button} from '../GeneralComponents/button/Button';
+import {Link}  from "react-router-dom";
+import { AcUnit, Videocam } from "@material-ui/icons";
 
 class HomePage extends Component {
     
@@ -38,9 +43,45 @@ class HomePage extends Component {
         return(
             <div>
                   <AppNavbar />
-                  {user?
+                 {/*  {user?
                 this.checkType(userType):auth===false && <h4 className="mb-3 ml-4">Please Log in to manage account</h4>}
-                 {/* : <h1 className="mb-3 ml-4">Transition</h1> } */}
+                 : <h1 className="mb-3 ml-4">Transition</h1> } */}
+                 <div className="homeHero">
+             <div className="homeHeroTop">
+                 <h4 className="homeHeroTopText">To continue to treat yourself, think about the video consultation.</h4>
+                 <span className="homeHeroTopDesc">It’s simple, fast, and reimbursed like an in-office consultation.</span>
+             </div>
+             <div className="hemeHeroButtom">
+                 <div className="homeHeroBottomLeft">
+                   
+                 </div>
+                 <div className="homeHeroBottomCenter">
+                 <Link to='/'>
+                        <Button buttonSize='btn--large' buttoncolor='blue'> 
+                     <span className="buttontext"> <Videocam className="iconButton" /> Make an appointment in video</span> 
+                         </Button>
+                    </Link>
+                 <div className="solutionbar">
+                   <AcUnit  className="iconsSolution"/>
+                    <div className="infobar">
+                    <h4 className="infoTitle">
+                        An ideal solution to COVID-19    
+                    </h4>
+                    <span className="infoDesc">
+                         Avoid contact with others while continuing to treat yourself
+                    </span>
+                    </div>
+                  </div>
+                 </div>
+                 <div className="homeHeroBottomRight">
+ 
+                 </div>
+             </div>
+           </div>
+           <Services />
+          
+           <Footer />
+            
             </div>
         )
     }
