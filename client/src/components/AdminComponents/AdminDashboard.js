@@ -133,7 +133,7 @@ const getDataDoctors=()=>{
           <CChartBar
             datasets={[
               {
-                label: 'Exo-Clinics Appointments',
+                label: 'Allo tbib Appointments',
                 backgroundColor: '#41B883',
                 data: getAppointmentsData()
               }

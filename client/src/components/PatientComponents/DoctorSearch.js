@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import logo from '../../assets/images/logo.png';
 import Navbar from './../GeneralComponents/AppNavbar'
 import { setFilter } from '../../actions/patientActions';
 
@@ -106,7 +105,7 @@ DoctorSearch.defaultProps = {
     'Ayurveda',
     'Heart',
     'Neurologist'
-  ],
+  ], 
 };
 
 DoctorSearch.propTypes = {

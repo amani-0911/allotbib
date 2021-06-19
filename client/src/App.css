@@ -60,7 +60,7 @@ transition: opacity 1000ms ease-in;
 .homeHero{
   min-height: 60vh;
   width: 100%;
-  background-color: rgb(221, 239, 241);
+  background-color: #bae0db;
 }
 .homeHeroTop{
   text-align: center;
@@ -121,7 +121,7 @@ font-size: 12px;
 }
 .iconsSolution{
  font-size: 40px !important;;
- color: #0596de;
+ color: #47b7a7;
   margin: 8px  ;
 
 }
@@ -129,7 +129,7 @@ font-size: 12px;
 font-size: 14px;
   line-height: 24px;
 font-weight: 700;
-color: #0596de;
+color: #47b7a7;
 }
 .infoDesc{
 font-size: 12px;

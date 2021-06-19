@@ -43,9 +43,9 @@ class HomePage extends Component {
         return(
             <div>
                   <AppNavbar />
-                 {/*  {user?
-                this.checkType(userType):auth===false && <h4 className="mb-3 ml-4">Please Log in to manage account</h4>}
-                 : <h1 className="mb-3 ml-4">Transition</h1> } */}
+                 {user?
+                this.checkType(userType):auth===false && <>
+                
                  <div className="homeHero">
              <div className="homeHeroTop">
                  <h4 className="homeHeroTopText">To continue to treat yourself, think about the video consultation.</h4>
@@ -57,7 +57,7 @@ class HomePage extends Component {
                  </div>
                  <div className="homeHeroBottomCenter">
                  <Link to='/'>
-                        <Button buttonSize='btn--large' buttoncolor='blue'> 
+                        <Button buttonSize='btn--large' buttoncolor='green'> 
                      <span className="buttontext"> <Videocam className="iconButton" /> Make an appointment in video</span> 
                          </Button>
                     </Link>
@@ -79,7 +79,7 @@ class HomePage extends Component {
              </div>
            </div>
            <Services />
-          
+           </>}
            <Footer />
             
             </div>

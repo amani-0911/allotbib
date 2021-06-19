@@ -8,8 +8,13 @@
     height: 2rem;
     margin: none;
   }
+  .navbar-text{
+    font-size:22px;
+    font-weight: 400;
+  }
   .bookings-link{
     color: #47b7a7;
+    text-decoration: none;
   }
   .link {
     color: #FFF;
@@ -25,6 +30,7 @@
     font-weight: 500;
     margin-left: 2rem;
     align-self: center;
+    text-decoration: none;
   }
 
   a,
